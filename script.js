@@ -72,3 +72,37 @@ yellowbtn.addEventListener('click',makeyellow);
 
 
 
+
+// porject 4
+let like = 0;
+// dom  
+let likebtn =document.getElementById('likebtn');
+let likecount =document.getElementById('likecount');
+// function  
+function likepost(){
+    like++;
+    likecount.textContent= like + "likes";
+    likebtn.textContent =  "liked";
+    likebtn.classlist.add("like");
+     
+}
+// Event  
+likebtn.addEventListener("click", likepost);
+
+// project 5
+let password = document.getElementById('password');
+let showbtn = document.getElementById('showbtn');
+//  function  
+function showhidepassword(){
+    if(password.type === "password"){
+        password.type="text";
+        showbtn.textContent= "hdie";
+
+    } else{
+        password.type = "password";
+        showbtn.textContent = "show" ;
+    }
+}
+
+// Event  
+showbtn.addEventListener('click',showhidepassword());

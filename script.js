@@ -6,11 +6,11 @@ let counttext = document.getElementById('count');
 
 // function  
 function increase() {
-    count = count - 1;
+    count = count + 1;
     counttext.textContent = count;
 }
 function decrease() {
-    count = count + 1;
+    count = count -1;
     counttext.textContent = count;
 }
 function reset() {
@@ -82,7 +82,7 @@ let likecount =document.getElementById('likecount');
 function likepost(){
     like++;
     likecount.textContent= like + "likes";
-    likebtn.textContent =  "liked";
+    likebtn.textContent =  " people liked ";
     likebtn.classlist.add("like");
      
 }
@@ -106,3 +106,10 @@ function showhidepassword(){
 
 // Event  
 showbtn.addEventListener('click',showhidepassword);
+
+
+// let hi = document.getElementById('usama');
+// hi.innerTexttext= "GOOD morning";
+
+let btn = document.getElementById('hello');
+btn.textContent= "click here usama";
